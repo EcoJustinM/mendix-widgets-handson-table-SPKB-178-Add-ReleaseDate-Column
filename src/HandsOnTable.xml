@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="lfts.handsontable.HandsOnTable" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Hands On Table</name>
+    <description>My widget description</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="dataSource" type="datasource" required="true" isList="true">
+                <caption>Data Source</caption>
+                <description>Select a microflow, nanoflow or entity to display in the HandsOnTable</description>
+            </property>
+            <property key="EcoID" type="attribute" dataSource="dataSource">
+                <caption>Eco Id</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="Integer"/>
+                </attributeTypes>
+            </property>
+            <property key="Brand" type="attribute" dataSource="dataSource">
+                <caption>Brand</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+            <property key="Model" type="attribute" dataSource="dataSource">
+                <caption>Model</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+            <property key="Model_Name" type="attribute" dataSource="dataSource">
+                <caption>Model Name</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+            <property key="ecoGrade" type="attribute" dataSource="dataSource">
+                <caption>Grade</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+            <property key="Carrier" type="attribute" dataSource="dataSource">
+                <caption>Carrier</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+            <property key="Added" type="attribute" dataSource="dataSource">
+                <caption>Added</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="DateTime"/>
+                </attributeTypes>
+            </property>
+            <property key="MaximumQuantity" type="attribute" dataSource="dataSource">
+                <caption>Max. Qty.</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="Integer"/>
+                </attributeTypes>
+            </property>
+            <property key="TargetPrice" type="attribute" dataSource="dataSource">
+                <caption>Target Price</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="Decimal"/>
+                </attributeTypes>
+            </property>
+            <property key="BidAmount" type="attribute" dataSource="dataSource">
+                <caption>Bid Price</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="Decimal"/>
+                </attributeTypes>
+            </property>
+            <property key="BidQuantity" type="attribute" dataSource="dataSource">
+                <caption>Bid Qty</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="Integer"/>
+                </attributeTypes>
+            </property>
+            <property key="User" type="attribute" dataSource="dataSource">
+                <caption>User</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+            <property key="Code" type="attribute" dataSource="dataSource">
+                <caption>Code</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+            <property key="CompanyName" type="attribute" dataSource="dataSource">
+                <caption>CompanyName</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+            <property key="BuyerCodeType" type="attribute" dataSource="dataSource">
+                <caption>BuyerCodeType</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+            <property key="Data_Wipe_Quantity" type="attribute" dataSource="dataSource">
+                <caption>Data_Wipe_Quantity</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="Integer"/>
+                </attributeTypes>
+            </property>
+            <property key="BidRound" type="attribute" dataSource="dataSource">
+                <caption>BidRound</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="Integer"/>
+                </attributeTypes>
+            </property>
+            <property key="previousRoundBidAmount" type="attribute" dataSource="dataSource">
+                <caption>Previous Round Bid Price</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="Decimal"/>
+                </attributeTypes>
+            </property>
+            <property key="previousRoundBidQuantity" type="attribute" dataSource="dataSource">
+                <caption>Previous Round Bid Qty</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="Integer"/>
+                </attributeTypes>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

@@ -1,0 +1,206 @@
+/*
+  A stylesheet customizing app (custom renderers)
+*/
+/*
+table.htCore tr.odd td {
+  background: #fafbff;
+}
+*/
+/*
+  A stylesheet customizing Handsontable style
+*/
+
+/*
+.handsontable {
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+}
+
+.collapsibleIndicator {
+  text-align: center;
+}
+
+.handsontable .htRight .changeType {
+  margin: 3px 1px 0 13px;
+}
+*/
+
+/* AS - new additions */
+
+/* AS -  top left corner  */
+/*
+.handsontable .ht_clone_top_left_corner .htCore > thead > tr:first-child > th {
+  background-color: transparent;
+  border: none !important;
+  padding-top: 1px;
+}
+*/
+/* AS -  top -1, left corner, border handling  */
+/*
+.handsontable
+  .ht_clone_top_left_corner
+  .htCore
+  > thead
+  > tr:nth-child(2)
+  > th:first-child {
+  border-top: 1px solid rgb(204, 204, 204);
+}
+*/
+
+.handsontable {
+  font-size: 16px;
+  font-family: "Brandon Grotesque", sans-serif;
+  font-weight: 400;
+}
+
+.handsontable th,
+.handsontable td {
+  border-color: #d0d0d0 !important;
+}
+
+.handsontable .column-headers {
+  color: #898787; /* Change font color */
+  font-size: 14px;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: transparent;
+}
+
+.handsontable .column-headers.ht__highlight {
+  background-color: transparent;
+}
+
+.handsontable .column-headers.ht__active_highlight {
+  color: #898787; /* Change font color */
+}
+
+.handsontable .bid-column-headers {
+  color: #3c3c3c; /* Change font color */
+  font-size: 16px;
+}
+
+.handsontable .custom-cells {
+  padding: 10px;
+  color: #666766;
+  background-color: #f4f3f1;
+
+}
+
+.handsontable .custom-bid-cells {
+  color: #3c3c3c;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.handsontable .centered-cells {
+  text-align: center;
+}
+
+/* Change the border color of the active cell */
+.htBorders .wtBorder.current,
+.htBorders .wtBorder.area {
+  background-color: #14ac36 !important; /* Example: bright red border */
+}
+
+/* Change the border color of selected cells */
+.handsontable td.area:before {
+  background-color: #14ac36;
+}
+
+.handsontable .handsontableInput {
+  box-shadow: inset 0 0 0 2px #14ac36;
+}
+/* filter icon */
+
+.handsontable .changeType {
+  width: 20px;
+  height: 20px;
+  margin-top: 1px;
+  border: none;
+}
+
+/* filters */
+
+.htUIMultipleSelectHot,
+.htUIMultipleSelectHot .ht_master {
+  height: 323px !important;
+}
+
+.handsontable .htDropdownMenu table.htCore {
+  width: 300px !important;
+}
+
+.htItemWrapper {
+  padding-top: 10px;
+}
+.htUISelectionControls {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.htUISelectionControls a {
+  color: #373737;
+}
+
+.handsontable .htCheckboxRendererInput {
+  accent-color: #14ac36;
+  margin-bottom: 4px;
+}
+
+.handsontable .htCheckboxRendererLabel {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.handsontable .htCustomMenuRenderer.htFiltersMenuActionBar .htItemWrapper {
+  padding-bottom: 10px;
+}
+
+.handsontable
+  .htCustomMenuRenderer.htFiltersMenuActionBar
+  .htItemWrapper
+  input {
+  font-weight: inherit;
+}
+.handsontable .htCustomMenuRenderer .htUISelectCaption {
+  font-weight: inherit;
+}
+
+/*
+Not done:
+Drop shadow to the right .8 black. 8x 0y
+
+*/
+/* //AS added to work with mendix*/
+
+.handsontable .htCheckboxRendererLabel {
+  font-weight: inherit;
+  margin: 0px;
+}
+
+.handsontable .htCheckboxRendererInput {
+  margin-bottom: 4px !important;
+  margin-right: 5px !important;
+}
+
+.handsontable .bid-column-headers.ht__active_highlight {
+  color: #3c3c3c;
+  background-color: transparent;
+}
+.round2-bidder-note {
+  background: #efeeec;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 17px;
+  display: inline-block;
+  box-sizing: border-box;
+  font-weight: bold;
+  color:red;
+}
+#rowInfo {
+  height: 15px;
+  display: inline-block;
+}
