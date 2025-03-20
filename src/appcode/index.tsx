@@ -81,7 +81,7 @@ class App extends Component<AppProps> {
               }
             }
           } else {
-            const existingBidValue = this.props.entityData[physicalRow][col+8]; //const existingBidValue = this.props.entityData[row][col+8];
+            const existingBidValue = this.props.entityData[physicalRow][9+8]; //const existingBidValue = this.props.entityData[row][col+8];
             console.log("existingBidValue: ", newValue, " oldValue: ", oldValue);
             
             console.log("round 2 or 3: newValue: ", newValue, " oldValue: ", oldValue);
